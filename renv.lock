@@ -506,6 +506,75 @@
       "Author": "Hervé Pagès [aut, cre], Patrick Aboyoun [aut], Robert Gentleman [aut], Saikat DebRoy [aut], Vince Carey [ctb], Nicolas Delhomme [ctb], Felix Ernst [ctb], Wolfgang Huber [ctb] ('matchprobes' vignette), Haleema Khan [ctb] (Converted 'matchprobes' vignette from Sweave to RMarkdown), Aidan Lakshman [ctb], Kieran O'Neill [ctb], Valerie Obenchain [ctb], Marcel Ramos [ctb], Albert Vill [ctb], Jen Wokaty [ctb] (Converted 'matchprobes' vignette from Sweave to RMarkdown), Erik Wright [ctb]",
       "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>"
     },
+    "ChIPseeker": {
+      "Package": "ChIPseeker",
+      "Version": "1.40.0",
+      "Source": "Bioconductor",
+      "Type": "Package",
+      "Title": "ChIPseeker for ChIP peak Annotation, Comparison, and Visualization",
+      "Authors@R": "c( person(given = \"Guangchuang\", family = \"Yu\",       email = \"guangchuangyu@gmail.com\",      role  = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6485-8781\")), person(given = \"Ming\",        family = \"Li\",       email = \"limiang929@gmail.com\",         role = \"ctb\"), person(given = \"Qianwen\",        family = \"Wang\",       email = \"treywea@gmail.com\",         role = \"ctb\"), person(given = \"Yun\",         family = \"Yan\",      email = \"youryanyun@gmail.com\",         role = \"ctb\"), person(given = \"Hervé\",       family = \"Pagès\",    email = \"hpages.on.github@gmail.com\",   role  = \"ctb\"), person(given = \"Michael\",     family = \"Kluge\",    email = \"michael.kluge@bio.ifi.lmu.de\", role  = \"ctb\"), person(given = \"Thomas\",      family = \"Schwarzl\", email = \"schwarzl@embl.de\",             role  = \"ctb\"), person(given = \"Zhougeng\",    family = \"Xu\",       email = \"xuzhougeng@163.com\",           role  = \"ctb\") )",
+      "Maintainer": "Guangchuang Yu <guangchuangyu@gmail.com>",
+      "Description": "This package implements functions to retrieve the nearest genes around the peak, annotate genomic region of the peak, statstical methods for estimate the significance of overlap among ChIP peak data sets, and incorporate GEO database for user to compare the own dataset with those deposited in database. The comparison can be used to infer cooperative regulation and thus can be used to generate hypotheses. Several visualization functions are implemented to summarize the coverage of the peak experiment, average profile and heatmap of peaks binding to TSS regions, genomic annotation, distance to TSS, and overlap of peaks or genes.",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "Imports": [
+        "AnnotationDbi",
+        "BiocGenerics",
+        "boot",
+        "enrichplot",
+        "IRanges",
+        "GenomeInfoDb",
+        "GenomicRanges",
+        "GenomicFeatures",
+        "ggplot2",
+        "gplots",
+        "graphics",
+        "grDevices",
+        "gtools",
+        "methods",
+        "plotrix",
+        "dplyr",
+        "parallel",
+        "magrittr",
+        "rtracklayer",
+        "S4Vectors",
+        "stats",
+        "TxDb.Hsapiens.UCSC.hg19.knownGene",
+        "utils",
+        "aplot",
+        "yulab.utils",
+        "tibble"
+      ],
+      "Suggests": [
+        "clusterProfiler",
+        "ggimage",
+        "ggplotify",
+        "ggupset",
+        "ggVennDiagram",
+        "ReactomePA",
+        "org.Hs.eg.db",
+        "knitr",
+        "rmarkdown",
+        "testthat",
+        "prettydoc"
+      ],
+      "URL": "https://onlinelibrary.wiley.com/share/author/GYJGUBYCTRMYJFN2JFZZ?target=10.1002/cpz1.585",
+      "BugReports": "https://github.com/YuLab-SMU/ChIPseeker/issues",
+      "Encoding": "UTF-8",
+      "VignetteBuilder": "knitr",
+      "ByteCompile": "true",
+      "License": "Artistic-2.0",
+      "biocViews": "Annotation, ChIPSeq, Software, Visualization, MultipleComparison",
+      "RoxygenNote": "7.2.3",
+      "git_url": "https://git.bioconductor.org/packages/ChIPseeker",
+      "git_branch": "RELEASE_3_19",
+      "git_last_commit": "8063d66",
+      "git_last_commit_date": "2024-04-30",
+      "Repository": "Bioconductor 3.19",
+      "NeedsCompilation": "no",
+      "Author": "Guangchuang Yu [aut, cre] (<https://orcid.org/0000-0002-6485-8781>), Ming Li [ctb], Qianwen Wang [ctb], Yun Yan [ctb], Hervé Pagès [ctb], Michael Kluge [ctb], Thomas Schwarzl [ctb], Zhougeng Xu [ctb]"
+    },
     "ComplexHeatmap": {
       "Package": "ComplexHeatmap",
       "Version": "2.20.0",
@@ -1347,6 +1416,31 @@
       "NeedsCompilation": "no",
       "Author": "Dan Tenenbaum [aut], Bioconductor Package Maintainer [aut, cre], Martin Morgan [ctb], Kozo Nishida [ctb], Marcel Ramos [ctb], Kristina Riemer [ctb], Lori Shepherd [ctb], Jeremy Volkening [ctb]",
       "Maintainer": "Bioconductor Package Maintainer <maintainer@bioconductor.org>"
+    },
+    "KernSmooth": {
+      "Package": "KernSmooth",
+      "Version": "2.23-24",
+      "Source": "Repository",
+      "Priority": "recommended",
+      "Date": "2024-05-16",
+      "Title": "Functions for Kernel Smoothing Supporting Wand & Jones (1995)",
+      "Authors@R": "c(person(\"Matt\", \"Wand\", role = \"aut\", email = \"Matt.Wand@uts.edu.au\"), person(\"Cleve\", \"Moler\", role = \"ctb\", comment = \"LINPACK routines in src/d*\"), person(\"Brian\", \"Ripley\", role = c(\"trl\", \"cre\", \"ctb\"), email = \"ripley@stats.ox.ac.uk\", comment = \"R port and updates\"))",
+      "Note": "Maintainers are not available to give advice on using a package they did not author.",
+      "Depends": [
+        "R (>= 2.5.0)",
+        "stats"
+      ],
+      "Suggests": [
+        "MASS",
+        "carData"
+      ],
+      "Description": "Functions for kernel smoothing (and density estimation) corresponding to the book:  Wand, M.P. and Jones, M.C. (1995) \"Kernel Smoothing\".",
+      "License": "Unlimited",
+      "ByteCompile": "yes",
+      "NeedsCompilation": "yes",
+      "Author": "Matt Wand [aut], Cleve Moler [ctb] (LINPACK routines in src/d*), Brian Ripley [trl, cre, ctb] (R port and updates)",
+      "Maintainer": "Brian Ripley <ripley@stats.ox.ac.uk>",
+      "Repository": "CRAN"
     },
     "MASS": {
       "Package": "MASS",
@@ -2589,6 +2683,33 @@
       "Maintainer": "Kirill Müller <kirill@cynkra.com>",
       "Repository": "CRAN"
     },
+    "boot": {
+      "Package": "boot",
+      "Version": "1.3-30",
+      "Source": "Repository",
+      "Priority": "recommended",
+      "Date": "2024-02-19",
+      "Authors@R": "c(person(\"Angelo\", \"Canty\", role = \"aut\", email = \"cantya@mcmaster.ca\",  comment = \"author of original code for S\"), person(\"Brian\", \"Ripley\", role = c(\"aut\", \"trl\"), email = \"ripley@stats.ox.ac.uk\", comment = \"conversion to R, maintainer 1999--2022, author of parallel support\"), person(\"Alessandra R.\", \"Brazzale\", role = c(\"ctb\", \"cre\"), email = \"brazzale@stat.unipd.it\", comment = \"minor bug fixes\"))",
+      "Maintainer": "Alessandra R. Brazzale <brazzale@stat.unipd.it>",
+      "Note": "Maintainers are not available to give advice on using a package they did not author.",
+      "Description": "Functions and datasets for bootstrapping from the book \"Bootstrap Methods and Their Application\" by A. C. Davison and  D. V. Hinkley (1997, CUP), originally written by Angelo Canty for S.",
+      "Title": "Bootstrap Functions (Originally by Angelo Canty for S)",
+      "Depends": [
+        "R (>= 3.0.0)",
+        "graphics",
+        "stats"
+      ],
+      "Suggests": [
+        "MASS",
+        "survival"
+      ],
+      "LazyData": "yes",
+      "ByteCompile": "yes",
+      "License": "Unlimited",
+      "NeedsCompilation": "no",
+      "Author": "Angelo Canty [aut] (author of original code for S), Brian Ripley [aut, trl] (conversion to R, maintainer 1999--2022, author of parallel support), Alessandra R. Brazzale [ctb, cre] (minor bug fixes)",
+      "Repository": "CRAN"
+    },
     "broom": {
       "Package": "broom",
       "Version": "1.0.6",
@@ -2762,6 +2883,30 @@
       "NeedsCompilation": "no",
       "Author": "Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>), Joe Cheng [aut], Garrick Aden-Buie [aut] (<https://orcid.org/0000-0002-7111-0077>), Posit Software, PBC [cph, fnd], Bootstrap contributors [ctb] (Bootstrap library), Twitter, Inc [cph] (Bootstrap library), Javi Aguilar [ctb, cph] (Bootstrap colorpicker library), Thomas Park [ctb, cph] (Bootswatch library), PayPal [ctb, cph] (Bootstrap accessibility plugin)",
       "Maintainer": "Carson Sievert <carson@posit.co>",
+      "Repository": "CRAN"
+    },
+    "caTools": {
+      "Package": "caTools",
+      "Version": "1.18.2",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Tools: Moving Window Statistics, GIF, Base64, ROC AUC, etc",
+      "Date": "2021-03-26",
+      "Author": "Jarek Tuszynski <jaroslaw.w.tuszynski@saic.com>",
+      "Maintainer": "Michael Dietze <mdietze@gfz-potsdam.de>",
+      "Depends": [
+        "R (>= 3.6.0)"
+      ],
+      "Imports": [
+        "bitops"
+      ],
+      "Suggests": [
+        "MASS",
+        "rpart"
+      ],
+      "Description": "Contains several basic utility functions including: moving (rolling, running) window statistic functions, read/write for GIF and ENVI binary files, fast calculation of AUC, LogitBoost classifier, base64 encoder/decoder, round-off-error-free sum and cumsum, etc.",
+      "License": "GPL-3",
+      "NeedsCompilation": "yes",
       "Repository": "CRAN"
     },
     "cachem": {
@@ -4808,6 +4953,39 @@
       "Maintainer": "Jennifer Bryan <jenny@posit.co>",
       "Repository": "CRAN"
     },
+    "gplots": {
+      "Package": "gplots",
+      "Version": "3.1.3.1",
+      "Source": "Repository",
+      "Title": "Various R Programming Tools for Plotting Data",
+      "Description": "Various R programming tools for plotting data, including: - calculating and plotting locally smoothed summary function as ('bandplot', 'wapply'), - enhanced versions of standard plots ('barplot2', 'boxplot2', 'heatmap.2', 'smartlegend'), - manipulating colors ('col2hex', 'colorpanel', 'redgreen', 'greenred', 'bluered', 'redblue', 'rich.colors'), - calculating and plotting two-dimensional data summaries ('ci2d', 'hist2d'), - enhanced regression diagnostic plots ('lmplot2', 'residplot'), - formula-enabled interface to 'stats::lowess' function ('lowess'), - displaying textual data in plots ('textplot', 'sinkplot'), - plotting a matrix where each cell contains a dot whose size reflects the relative magnitude of the elements ('balloonplot'), - plotting \"Venn\" diagrams ('venn'), - displaying Open-Office style plots ('ooplot'), - plotting multiple data on same region, with separate axes ('overplot'), - plotting means and confidence intervals ('plotCI', 'plotmeans'), - spacing points in an x-y plot so they don't overlap ('space').",
+      "Depends": [
+        "R (>= 3.0)"
+      ],
+      "Imports": [
+        "gtools",
+        "stats",
+        "caTools",
+        "KernSmooth",
+        "methods"
+      ],
+      "Suggests": [
+        "grid",
+        "MASS",
+        "knitr",
+        "r2d2"
+      ],
+      "VignetteBuilder": "knitr",
+      "Date": "2022-04-24",
+      "Authors@R": "c( person(\"Gregory R.\", \"Warnes\", , role = \"aut\"), person(\"Ben\", \"Bolker\", , role = \"aut\"), person(\"Lodewijk\", \"Bonebakker\", , role = \"aut\"), person(\"Robert\", \"Gentleman\", role = \"aut\"), person(\"Wolfgang\", \"Huber\", role = \"aut\"), person(\"Andy\", \"Liaw\", role = \"aut\"), person(\"Thomas\", \"Lumley\", role = \"aut\"), person(\"Martin\", \"Maechler\", role = \"aut\"), person(\"Arni\", \"Magnusson\", role = \"aut\"), person(\"Steffen\", \"Moeller\", role = \"aut\"), person(\"Marc\", \"Schwartz\", role = \"aut\"), person(\"Bill\", \"Venables\", role = \"aut\"), person(\"Tal\", \"Galili\", , \"tal.galili@gmail.com\", c(\"ctb\", \"cre\")) )",
+      "License": "GPL-2",
+      "URL": "https://github.com/talgalili/gplots",
+      "BugReports": "https://github.com/talgalili/gplots/issues",
+      "NeedsCompilation": "no",
+      "Author": "Gregory R. Warnes [aut], Ben Bolker [aut], Lodewijk Bonebakker [aut], Robert Gentleman [aut], Wolfgang Huber [aut], Andy Liaw [aut], Thomas Lumley [aut], Martin Maechler [aut], Arni Magnusson [aut], Steffen Moeller [aut], Marc Schwartz [aut], Bill Venables [aut], Tal Galili [ctb, cre]",
+      "Maintainer": "Tal Galili <tal.galili@gmail.com>",
+      "Repository": "CRAN"
+    },
     "graphlayouts": {
       "Package": "graphlayouts",
       "Version": "1.1.1",
@@ -4962,6 +5140,37 @@
       "NeedsCompilation": "no",
       "Author": "Hadley Wickham [aut], Thomas Lin Pedersen [aut, cre], Posit Software, PBC [cph, fnd]",
       "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
+      "Repository": "CRAN"
+    },
+    "gtools": {
+      "Package": "gtools",
+      "Version": "3.9.5",
+      "Source": "Repository",
+      "Title": "Various R Programming Tools",
+      "Description": "Functions to assist in R programming, including: - assist in developing, updating, and maintaining R and R packages ('ask', 'checkRVersion', 'getDependencies', 'keywords', 'scat'), - calculate the logit and inverse logit transformations ('logit', 'inv.logit'), - test if a value is missing, empty or contains only NA and NULL values ('invalid'), - manipulate R's .Last function ('addLast'), - define macros ('defmacro'), - detect odd and even integers ('odd', 'even'), - convert strings containing non-ASCII characters (like single quotes) to plain ASCII ('ASCIIfy'), - perform a binary search ('binsearch'), - sort strings containing both numeric and character components ('mixedsort'), - create a factor variable from the quantiles of a continuous variable ('quantcut'), - enumerate permutations and combinations ('combinations', 'permutation'), - calculate and convert between fold-change and log-ratio ('foldchange', 'logratio2foldchange', 'foldchange2logratio'), - calculate probabilities and generate random numbers from Dirichlet distributions ('rdirichlet', 'ddirichlet'), - apply a function over adjacent subsets of a vector ('running'), - modify the TCP_NODELAY ('de-Nagle') flag for socket objects, - efficient 'rbind' of data frames, even if the column names don't match ('smartbind'), - generate significance stars from p-values ('stars.pval'), - convert characters to/from ASCII codes ('asc', 'chr'), - convert character vector to ASCII representation ('ASCIIfy'), - apply title capitalization rules to a character vector ('capwords').",
+      "Authors@R": "c(person(\"Gregory R.\", \"Warnes\", role = \"aut\"), person(\"Ben\", \"Bolker\", role = c(\"aut\", \"cre\"), email = \"bolker@mcmaster.ca\", comment=c(ORCID=\"0000-0002-2127-0443\")), person(\"Thomas\", \"Lumley\", role = \"aut\"), person(\"Arni\", \"Magnusson\", role = \"aut\"), person(\"Bill\", \"Venables\", role = \"aut\"), person(\"Genei\", \"Ryodan\", role = \"aut\"), person(\"Steffen\", \"Moeller\", role = \"aut\"), person(\"Ian\", \"Wilson\", role = \"ctb\"), person(\"Mark\", \"Davis\", role = \"ctb\"), person(\"Nitin\", \"Jain\", role=\"ctb\"), person(\"Scott\", \"Chamberlain\", role = \"ctb\"))",
+      "License": "GPL-2",
+      "Depends": [
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "URL": "https://github.com/r-gregmisc/gtools",
+      "BugReports": "https://github.com/r-gregmisc/gtools/issues",
+      "Language": "en-US",
+      "Suggests": [
+        "car",
+        "gplots",
+        "knitr",
+        "rstudioapi",
+        "SGP",
+        "taxize"
+      ],
+      "RoxygenNote": "7.2.3",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "yes",
+      "Author": "Gregory R. Warnes [aut], Ben Bolker [aut, cre] (<https://orcid.org/0000-0002-2127-0443>), Thomas Lumley [aut], Arni Magnusson [aut], Bill Venables [aut], Genei Ryodan [aut], Steffen Moeller [aut], Ian Wilson [ctb], Mark Davis [ctb], Nitin Jain [ctb], Scott Chamberlain [ctb]",
+      "Maintainer": "Ben Bolker <bolker@mcmaster.ca>",
       "Repository": "CRAN"
     },
     "haven": {
@@ -6226,6 +6435,30 @@
       "Author": "Kirill Müller [aut, cre], Sergey Podobry [cph] (Author of the bundled plog library)",
       "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
       "Repository": "CRAN"
+    },
+    "plotrix": {
+      "Package": "plotrix",
+      "Version": "3.8-14",
+      "Source": "Repository",
+      "Title": "Various Plotting Functions",
+      "Authors@R": "c( person(\"Jim\", \"Lemon\", role = \"aut\"), person(\"Ben\", \"Bolker\", role = \"ctb\"), person(\"Sander\", \"Oom\", role = \"ctb\"), person(\"Eduardo\", \"Klein\", role = \"ctb\"), person(\"Barry\", \"Rowlingson\", role = \"ctb\"), person(\"Hadley\", \"Wickham\", role = \"ctb\"), person(\"Anupam\", \"Tyagi\", role = \"ctb\"), person(\"Olivier\", \"Eterradossi\", role = \"ctb\"), person(\"Gabor\", \"Grothendieck\", role = \"ctb\"), person(\"Michael\", \"Toews\", role = \"ctb\"), person(\"John\", \"Kane\", role = \"ctb\"), person(\"Rolf\", \"Turner\", role = \"ctb\"), person(\"Carl\", \"Witthoft\", role = \"ctb\"), person(\"Julian\", \"Stander\", role = \"ctb\"), person(\"Thomas\", \"Petzoldt\", role = \"ctb\"), person(\"Remko\", \"Duursma\", role = \"ctb\"), person(\"Elisa\", \"Biancotto\", role = \"ctb\"), person(\"Ofir\", \"Levy\", role = \"ctb\"), person(\"Christophe\", \"Dutang\", role = \"ctb\"), person(\"Peter\", \"Solymos\", role = \"ctb\"), person(\"Robby\", \"Engelmann\", role = \"ctb\"), person(\"Michael\", \"Hecker\", role = \"ctb\"), person(\"Felix\", \"Steinbeck\", role = \"ctb\"), person(\"Hans\", \"Borchers\", role = \"ctb\"), person(\"Henrik\", \"Singmann\", role = \"ctb\"), person(\"Ted\", \"Toal\", role = \"ctb\"), person(\"Derek\", \"Ogle\", role = \"ctb\"), person(\"Darshan\", \"Baral\", role = \"ctb\"), person(\"Ulrike\", \"Groemping\", role = \"ctb\"), person(\"Bill\", \"Venables\", role = \"ctb\"), person(family = \"The CRAN Team\", role = \"ctb\"), person(\"Duncan\", \"Murdoch\", email = \"murdoch.duncan@gmail.com\", role = c(\"ctb\", \"cre\")))",
+      "Imports": [
+        "grDevices",
+        "graphics",
+        "stats",
+        "utils"
+      ],
+      "Description": "Lots of plots, various labeling, axis and color scaling functions. The author/maintainer died in September 2023.",
+      "License": "GPL (>= 2)",
+      "NeedsCompilation": "no",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "Repository": "CRAN",
+      "URL": "https://plotrix.github.io/plotrix/, https://github.com/plotrix/plotrix",
+      "BugReports": "https://github.com/plotrix/plotrix/issues",
+      "Author": "Jim Lemon [aut], Ben Bolker [ctb], Sander Oom [ctb], Eduardo Klein [ctb], Barry Rowlingson [ctb], Hadley Wickham [ctb], Anupam Tyagi [ctb], Olivier Eterradossi [ctb], Gabor Grothendieck [ctb], Michael Toews [ctb], John Kane [ctb], Rolf Turner [ctb], Carl Witthoft [ctb], Julian Stander [ctb], Thomas Petzoldt [ctb], Remko Duursma [ctb], Elisa Biancotto [ctb], Ofir Levy [ctb], Christophe Dutang [ctb], Peter Solymos [ctb], Robby Engelmann [ctb], Michael Hecker [ctb], Felix Steinbeck [ctb], Hans Borchers [ctb], Henrik Singmann [ctb], Ted Toal [ctb], Derek Ogle [ctb], Darshan Baral [ctb], Ulrike Groemping [ctb], Bill Venables [ctb], The CRAN Team [ctb], Duncan Murdoch [ctb, cre]",
+      "Maintainer": "Duncan Murdoch <murdoch.duncan@gmail.com>"
     },
     "plyr": {
       "Package": "plyr",
